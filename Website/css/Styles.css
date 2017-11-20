@@ -48,8 +48,8 @@ table {
 	border-spacing: 0;
 }
 
-html, body {
-    max-width: 100%;
+html {
+	box-sizing: border-box;
 }
 
 
@@ -72,7 +72,14 @@ html, body {
 	display: inline-block;
 }
 
-.nav ul li:hover {
+
+.nav ul li a {
+	list-style: none;
+	text-decoration: none;
+	color: lightgray;
+}
+
+.nav ul li a:hover {
 	color: gray;
 }
 
@@ -85,7 +92,7 @@ ul li.signup {
 
 .banner-header {
 	height: 600px;
-	width: 100%;
+	width: max-width;
 	background: url('../Images/img1.jpg');
 	background-size: cover;
 	background-position: right;
@@ -160,31 +167,27 @@ ul.first-icons {
 
 
 
-div .firstbox-left {
-	margin-left: 300px;
-	margin-top: 100px;
+ .firstbox-left {
+	padding: 100px 0 0 300px;
 	width: 400px;
 	float: left;
-	text-align: justify;
 	line-height: 1.5em;
 }
 
-div .firstbox-title {
+ .firstbox-title {
 	color: #5EC290;
 	font-size: 25px;
-	margin-bottom: 25px;
+	padding-bottom: 25px;
 }
-
-div .firstbox-right {
+ .firstbox-right {
 	float: right;
-	margin-right: 390px;
-	margin-top: 110px;
-	width: 400p x;
+	padding: 110px 390px;
+	width: 400px;
 }
 
 .firstbox-right ul li {
 	display: inline-block;
-	margin: 0 20px 0 20px;
+	margin: 0 22px 0 20px;
 }
 
 div ul li .firstbox-right {
@@ -196,7 +199,7 @@ div ul li .firstbox-right {
 
 ul.first-icons {
 	font-size: 80px;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 	color: #5EC290;
 }
 
@@ -220,22 +223,20 @@ ul.first-icons {
 .second-left {
 	float: left;
 	width: 500px;
-	margin-left: 300px;
-	margin-top:40px;
+	padding: 40px 0 0 300px;
 
 }
 
 .second-right {
 	float: right;
 	width: 400px;
-	margin-right: 280px;
-	margin-top: 40px;
+	padding: 40px 280px;
  }
+
 
  h2.second-title {
 	 font-size: 30px;
-	 margin-right: 5px;
-	 margin-bottom: 25px;
+	 padding: 0 5px 25px;
 	 text-align: left;
 	 background: -webkit-linear-gradient(top, #5EC290,#5EA5E3);
 	 -webkit-background-clip: text;
@@ -259,7 +260,7 @@ ul.second-icons {
     background: -webkit-linear-gradient( #5EC290,#5EA5E3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-     margin-bottom:20px;
+     padding-bottom:10px;
      display: inline-block;
  }
 
@@ -677,7 +678,6 @@ ul.sixth-icons li {
 
 .security-info {
 	height: 500px;
-	width: 100%;
 	margin:150px 0 0 275px;
 }
 
@@ -822,8 +822,12 @@ h2.final-title  {
 
 
 .final-buttons {
-	margin-top: 8px;
 	text-align: center;
+}
+
+
+.final-buttons li {
+	display: inline-block;
 }
 
 
@@ -865,7 +869,7 @@ h2.final-title  {
 .foot-hr {
 	width: 70%;
 	opacity: .30;
-	margin-top: 75px;
+	padding-top: 75px;
 }
 
 .left-foot {
@@ -876,12 +880,12 @@ h2.final-title  {
 }
 
 .right-foot {
-	margin: 50px 270px 0 0;
+	padding: 50px 270px 0 0;
 	float: right;
 }
 
 .right-foot ul li {
-	margin: 0 20px 0 20px;
+	padding: 0 20px 0 20px;
 	color: lightgray;
 	display: inline-block;
 }
